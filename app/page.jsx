@@ -73,12 +73,11 @@ export default function JobListingPage() {
 
                     <button
                       onClick={() => router.push(`/jobs/${job.id}`)}
-                      className="w-full px-6 py-2 text-sm font-medium text-white transition rounded-lg shadow-md sm:w-auto bg-gradient-to-r from-gray-600 to-black hover:from-gray-700 hover:to-gray-700"
-                    >
+                      className="w-full px-6 py-2 text-sm font-medium text-white transition rounded-lg shadow-md sm:w-auto bg-gradient-to-r from-gray-600 to-black hover:from-gray-700 hover:to-gray-700">
                       Apply Now
                     </button>
                   </div>
-
+                        
                   <div className="flex flex-wrap gap-3 px-5 py-4 text-sm border-t bg-gray-50">
                     <span className="flex items-center px-3 py-1 text-black rounded-full bg-blue-50">
                       <BriefcaseIcon className="w-5 h-5 mr-2 text-black" />

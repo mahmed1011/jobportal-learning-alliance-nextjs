@@ -1,6 +1,6 @@
 "use client";
 import { use, useEffect, useState } from "react";  // ⬅️ import use()
-
+import DOMPurify from 'dompurify';
 import {
   BriefcaseIcon,
   MapPinIcon,
@@ -125,9 +125,11 @@ export default function JobDetailPage({ params }) {
         </div>
 
         {/* Job Description */}
+        {/* Job Description */}
         <div className="prose max-w-none text-gray-700 mb-10">
-          <p>{job.description}</p>
+          <div dangerouslySetInnerHTML={{ __html: job.description }} />
         </div>
+
 
         {/* Application Form */}
         <div className="bg-gray-50 border rounded-xl p-6 shadow-sm">
